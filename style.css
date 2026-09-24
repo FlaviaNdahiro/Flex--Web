@@ -1,0 +1,42 @@
+css: *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.parent{
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent div{
+    padding: 10px;
+    margin: 5px;
+    height: 70px;
+    width: 80px;
+    text-align: center;
+}
+#box1{
+    background-color: yellowgreen;
+}
+#box2{
+    background-color: green;
+}
+#box3{
+    background-color: #db650c;
+}
+#box4{
+    background-color: #f33662;
+}
+#box5{
+    background-color: #92a4ef;
+}
+#box6{
+    background-color: #1fbb6d;
+}
+#box7{
+    background-color: #eee049;
+}
+#box8{
+    background-color: #f1c40f;
+}
