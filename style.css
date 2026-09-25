@@ -1,4 +1,4 @@
-css: *{
+ *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,14 +6,15 @@ css: *{
 .parent{
     min-height: 100vh;
     display:flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-end;
+    animation: moveBoxes 5s linear infinite;
 }
 .parent div{
     padding: 10px;
     margin: 5px;
-    height: 70px;
-    width: 80px;
+    height: 30px;
+    width: 50px;
     text-align: center;
 }
 #box1{
@@ -34,9 +35,45 @@ css: *{
 #box6{
     background-color: #1fbb6d;
 }
-#box7{
-    background-color: #eee049;
-}
-#box8{
-    background-color: #f1c40f;
+
+@keyframes moveBoxes{
+    0%,10%{
+        justify-content: flex-start;
+        
+        align-items: flex-start;
+    }
+    10%,20%{
+        justify-content: center;
+        
+        align-items: flex-start;
+    }
+    20%,30%{
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    30%,40%{
+        justify-content: flex-start;
+        align-items: center;
+    }
+    40%,50%{
+        justify-content: center;
+        align-items: center;
+    }
+    50%,60%{
+        justify-content: flex-end;
+        align-items: center;
+    }
+    60%,70%{
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+    70%,80%{
+        justify-content: center;
+        align-items: flex-end;
+    }
+    80%,100%{
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    
 }
